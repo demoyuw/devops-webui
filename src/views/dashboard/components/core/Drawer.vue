@@ -31,7 +31,7 @@
           contain
         >
           <v-img
-            src="https://demos.creative-tim.com/vuetify-material-dashboard/favicon.ico"
+            src="../../../../assets/infinity.png"
             max-height="30"
           />
         </v-list-item-avatar>
@@ -76,6 +76,7 @@
       <div />
     </v-list>
 
+    <!--
     <template v-slot:append>
       <base-item
         :item="{
@@ -85,6 +86,7 @@
         }"
       />
     </template>
+    -->
   </v-navigation-drawer>
 </template>
 
@@ -108,16 +110,21 @@
       items: [
         {
           icon: 'mdi-view-dashboard',
-          title: 'dashboard',
+          title: '儀表板',
           to: '/',
         },
         {
-          icon: 'mdi-account',
-          title: 'user',
-          to: '/pages/user',
+          title: '工作清單',
+          icon: 'mdi-clipboard-outline',
+          to: '/xxx',
         },
         {
-          title: 'rtables',
+          title: '專案清單',
+          icon: 'mdi-clipboard-outline',
+          to: '/sss',
+        },
+        {
+          title: '資料表',
           icon: 'mdi-clipboard-outline',
           to: '/tables/regular-tables',
         },
@@ -160,7 +167,7 @@
       profile () {
         return {
           avatar: true,
-          title: this.$t('avatar'),
+          title: 'DevOps platform',
         }
       },
     },

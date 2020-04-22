@@ -13,13 +13,13 @@ export default new Router({
       children: [
         // Dashboard
         {
-          name: 'Dashboard',
+          name: '儀表板',
           path: '',
           component: () => import('@/views/dashboard/Dashboard'),
         },
         // Pages
         {
-          name: 'User Profile',
+          name: '使用者資料',
           path: 'pages/user',
           component: () => import('@/views/dashboard/pages/UserProfile'),
         },
@@ -40,7 +40,7 @@ export default new Router({
         },
         // Tables
         {
-          name: 'Regular Tables',
+          name: '資料表',
           path: 'tables/regular-tables',
           component: () => import('@/views/dashboard/tables/RegularTables'),
         },
