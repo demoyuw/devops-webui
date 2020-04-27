@@ -11,12 +11,10 @@
         lg="4"
       >
         <base-material-stats-card
-          color="info"
-          icon="mdi-twitter"
-          title="Followers"
-          value="+245"
-          sub-icon="mdi-clock"
-          sub-text="Just Updated"
+          color="warning"
+          icon="mdi-view-headline"
+          title="待處理工作數"
+          value="25"
         />
       </v-col>
 
@@ -28,10 +26,8 @@
         <base-material-stats-card
           color="primary"
           icon="mdi-poll"
-          title="Website Visits"
-          value="75.521"
-          sub-icon="mdi-tag"
-          sub-text="Tracked from Google Analytics"
+          title="本週完成工作/被分派工作"
+          value="18/21"
         />
       </v-col>
 
@@ -41,12 +37,10 @@
         lg="4"
       >
         <base-material-stats-card
-          color="success"
+          color="info"
           icon="mdi-store"
-          title="Revenue"
-          value="$ 34,245"
-          sub-icon="mdi-calendar"
-          sub-text="Last 24 Hours"
+          title="本月完成工作/被分派工作"
+          value="45/61"
         />
       </v-col>
       <!--
