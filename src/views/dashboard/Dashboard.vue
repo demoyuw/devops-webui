@@ -72,6 +72,7 @@
           hover-reveal
           type="Bar"
         >
+          <!--
           <template v-slot:reveal-actions>
             <v-tooltip bottom>
               <template v-slot:activator="{ attrs, on }">
@@ -107,15 +108,17 @@
               <span>Change Date</span>
             </v-tooltip>
           </template>
+          -->
 
           <h4 class="card-title font-weight-light mt-2 ml-2">
-            Website Views
+            被分派工作等級
           </h4>
-
+          <!--
           <p class="d-inline-flex font-weight-light ml-2 mt-1">
             Last Campaign Performance
           </p>
-
+          -->
+          <!--
           <template v-slot:actions>
             <v-icon
               class="mr-1"
@@ -125,6 +128,7 @@
             </v-icon>
             <span class="caption grey--text font-weight-light">updated 10 minutes ago</span>
           </template>
+          -->
         </base-material-chart-card>
       </v-col>
 
@@ -137,7 +141,7 @@
           :options="dailySalesChart.options"
           color="success"
           hover-reveal
-          type="Line"
+          type="Bar"
         >
           <template v-slot:reveal-actions>
             <v-tooltip bottom>
@@ -176,9 +180,9 @@
           </template>
 
           <h4 class="card-title font-weight-light mt-2 ml-2">
-            Daily Sales
+            各個專案工作數
           </h4>
-
+          <!--
           <p class="d-inline-flex font-weight-light ml-2 mt-1">
             <v-icon
               color="green"
@@ -189,7 +193,8 @@
             <span class="green--text">55%</span>&nbsp;
             increase in today's sales
           </p>
-
+          -->
+          <!--
           <template v-slot:actions>
             <v-icon
               class="mr-1"
@@ -199,6 +204,7 @@
             </v-icon>
             <span class="caption grey--text font-weight-light">updated 4 minutes ago</span>
           </template>
+          -->
         </base-material-chart-card>
       </v-col>
 
@@ -211,7 +217,7 @@
           :options="dataCompletedTasksChart.options"
           hover-reveal
           color="info"
-          type="Line"
+          type="Bar"
         >
           <template v-slot:reveal-actions>
             <v-tooltip bottom>
@@ -250,13 +256,15 @@
           </template>
 
           <h3 class="card-title font-weight-light mt-2 ml-2">
-            Completed Tasks
+            工作類型
           </h3>
 
+          <!--
           <p class="d-inline-flex font-weight-light ml-2 mt-1">
             Last Last Campaign Performance
           </p>
-
+          -->
+          <!--
           <template v-slot:actions>
             <v-icon
               class="mr-1"
@@ -266,9 +274,10 @@
             </v-icon>
             <span class="caption grey--text font-weight-light">campaign sent 26 minutes ago</span>
           </template>
+          -->
         </base-material-chart-card>
       </v-col>
-
+      <!--
       <v-col
         cols="12"
         md="6"
@@ -382,6 +391,7 @@
           </v-tabs-items>
         </base-material-card>
       </v-col>
+      -->
     </v-row>
   </v-container>
 </template>
@@ -394,9 +404,9 @@
       return {
         dailySalesChart: {
           data: {
-            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+            labels: ['UI設計', 'API開發', 'DB維護'],
             series: [
-              [12, 17, 7, 17, 23, 18, 38],
+              [12, 17, 7],
             ],
           },
           options: {
@@ -404,7 +414,7 @@
               tension: 0,
             }),
             low: 0,
-            high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+            high: 20, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
             chartPadding: {
               top: 0,
               right: 0,
@@ -415,9 +425,9 @@
         },
         dataCompletedTasksChart: {
           data: {
-            labels: ['12am', '3pm', '6pm', '9pm', '12pm', '3am', '6am', '9am'],
+            labels: ['Feature', 'Bug'],
             series: [
-              [230, 750, 450, 300, 280, 240, 200, 190],
+              [23, 75],
             ],
           },
           options: {
@@ -425,7 +435,7 @@
               tension: 0,
             }),
             low: 0,
-            high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+            high: 100, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
             chartPadding: {
               top: 0,
               right: 0,
@@ -436,13 +446,13 @@
         },
         emailsSubscriptionChart: {
           data: {
-            labels: ['Ja', 'Fe', 'Ma', 'Ap', 'Mai', 'Ju', 'Jul', 'Au', 'Se', 'Oc', 'No', 'De'],
+            labels: ['特急', '急', '普通'],
             series: [
-              [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
-
+              [9, 17, 58],
             ],
           },
           options: {
+            /*
             axisX: {
               showGrid: false,
             },
@@ -454,6 +464,7 @@
               bottom: 0,
               left: 0,
             },
+            */
           },
           responsiveOptions: [
             ['screen and (max-width: 640px)', {
