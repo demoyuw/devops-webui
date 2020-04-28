@@ -124,10 +124,16 @@
           to: '/sss',
         },
         {
-          title: '資料表',
+          title: 'CI/CD 工具軟體圖',
           icon: 'mdi-clipboard-outline',
           to: '/tables/regular-tables',
         },
+        {
+          title: 'CI/CD 紀錄清單',
+          icon: 'mdi-clipboard-outline',
+          to: '/tables/regular-tables',
+        },
+        /*
         {
           title: 'typography',
           icon: 'mdi-format-font',
@@ -148,6 +154,7 @@
           icon: 'mdi-bell',
           to: '/components/notifications',
         },
+        */
       ],
     }),
 
