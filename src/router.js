@@ -40,7 +40,7 @@ export default new Router({
         },
         // Tables
         {
-          name: '資料表',
+          name: 'CI/CD紀錄清單',
           path: 'tables/regular-tables',
           component: () => import('@/views/dashboard/tables/RegularTables'),
         },

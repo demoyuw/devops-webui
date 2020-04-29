@@ -126,7 +126,7 @@
         {
           title: 'CI/CD 工具軟體圖',
           icon: 'mdi-clipboard-outline',
-          to: '/tables/regular-tables',
+          to: '/dddd',
         },
         {
           title: 'CI/CD 紀錄清單',
