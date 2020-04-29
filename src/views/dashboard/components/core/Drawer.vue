@@ -126,7 +126,7 @@
         {
           title: 'CI/CD 工具軟體圖',
           icon: 'mdi-clipboard-outline',
-          to: '/dddd',
+          to: '/cicd/graph',
         },
         {
           title: 'CI/CD 紀錄清單',

@@ -38,6 +38,11 @@ export default new Router({
           path: 'components/typography',
           component: () => import('@/views/dashboard/component/Typography'),
         },
+        {
+          name: 'CI/CD工具軟體圖',
+          path: 'cicd/graph',
+          component: () => import('@/views/dashboard/Cicdgraph'),
+        },
         // Tables
         {
           name: 'CI/CD紀錄清單',
