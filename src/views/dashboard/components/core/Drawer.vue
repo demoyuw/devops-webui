@@ -124,7 +124,7 @@
           to: '/sss',
         },
         {
-          title: 'CI/CD 工具軟體圖',
+          title: 'CI/CD工具軟體設定',
           icon: 'mdi-clipboard-outline',
           to: '/cicd/graph',
         },

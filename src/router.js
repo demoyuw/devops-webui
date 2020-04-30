@@ -39,7 +39,7 @@ export default new Router({
           component: () => import('@/views/dashboard/component/Typography'),
         },
         {
-          name: 'CI/CD工具軟體圖',
+          name: 'CI/CD工具軟體設定',
           path: 'cicd/graph',
           component: () => import('@/views/dashboard/Cicdgraph'),
         },
