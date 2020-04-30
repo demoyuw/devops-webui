@@ -116,12 +116,12 @@
         {
           title: '工作清單',
           icon: 'mdi-clipboard-outline',
-          to: '/xxx',
+          to: '/tables/jobtables',
         },
         {
           title: '專案清單',
           icon: 'mdi-clipboard-outline',
-          to: '/sss',
+          to: '/tables/Projecttables',
         },
         {
           title: 'CI/CD工具軟體設定',

@@ -34,9 +34,14 @@ export default new Router({
           component: () => import('@/views/dashboard/component/Icons'),
         },
         {
-          name: 'Typography',
-          path: 'components/typography',
-          component: () => import('@/views/dashboard/component/Typography'),
+          name: '工作清單',
+          path: 'tables/jobtables',
+          component: () => import('@/views/dashboard/tables/JobTables'),
+        },
+        {
+          name: '專案清單',
+          path: 'tables/projecttables',
+          component: () => import('@/views/dashboard/tables/ProjectTables'),
         },
         {
           name: 'CI/CD工具軟體設定',
