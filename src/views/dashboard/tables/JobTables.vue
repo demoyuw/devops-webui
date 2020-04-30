@@ -14,208 +14,113 @@
     <base-material-card
       icon="mdi-clipboard-text"
       title=""
+      color="light-blue"
       class="px-5 py-3"
     >
       <v-simple-table>
         <thead>
           <tr>
-            <th class="primary--text">
-              Index
+            <th class="light-blue--text">
+              工作單號
             </th>
-            <th class="primary--text">
+            <th class="light-blue--text">
+              工作類型
+            </th>
+            <th class="light-blue--text">
+              優先級別
+            </th>
+            <th class="light-blue--text">
               狀態
             </th>
-            <th class="primary--text">
-              分支名稱
+            <th class="light-blue--text">
+              專案
             </th>
-            <th class="primary--text">
-              程式碼版控訊息
+            <th class="light-blue--text">
+              工作名稱
             </th>
-            <th class="primary--text">
-              最近一次執行時間
+            <th class="light-blue--text">
+              最近一次更新時間
             </th>
-            <!--
-            <th class="text-right primary--text">
-              Salary
+            <th class="light-blue--text">
+              最近一次測試結果
             </th>
-            -->
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <td>#8</td>
+            <td>3519</td>
+            <td>Feature</td>
+            <td>特急</td>
+            <td>Assigned</td>
+            <td>iServCloud UI開發</td>
+            <td>[ClientUI] 使用boot from iso 掛載volume問題</td>
+            <td>24 mins ago</td>
+            <td class="green--text">
+              Successful
+            </td>
+          </tr>
+          <tr>
+            <td>4308</td>
+            <td>Bug</td>
+            <td>急</td>
+            <td>Active</td>
+            <td>iServCloud UI開發</td>
+            <td>[雲碼] 蒐集各實體機上的iServCloud component service 的 "ERROR" message，並寫入DB。</td>
+            <td>5 hours ago</td>
             <td class="red--text">
               Failed
             </td>
-            <td>feature</td>
-            <td>Change chart type from "Line" to "Bar".</td>
-            <td>5 mins</td>
-            <!--
-            <td class="text-right">
-              $36,738
-            </td>
-            -->
           </tr>
-
           <tr>
-            <td>#7</td>
+            <td>4295</td>
+            <td>Bug</td>
+            <td>高</td>
+            <td>Solved</td>
+            <td>ERP專案API開發</td>
+            <td>自動化後端API開發作業流程</td>
+            <td>1 day ago</td>
             <td class="green--text">
-              Success
+              Successful
             </td>
-            <td>develop</td>
-            <td>Update stats-card's title, value and color.</td>
-            <td>20 mins</td>
           </tr>
-
           <tr>
-            <td>#6</td>
-            <td class="green--text">
-              Success
-            </td>
-            <td>develop</td>
-            <td>1. remove one v-col 2. reorder v-col</td>
-            <td>1 hr</td>
-          </tr>
-
-          <tr>
-            <td>#5</td>
+            <td>4003</td>
+            <td>Feature</td>
+            <td>正常</td>
+            <td>Responsed</td>
+            <td>iServCloud UI開發</td>
+            <td>Auto Live migraion功能</td>
+            <td>1 day ago</td>
             <td class="red--text">
               Failed
             </td>
-            <td>master</td>
-            <td>remove bar bottom image and transparency.</td>
-            <td>4 hrs</td>
           </tr>
           <tr>
-            <td>#4</td>
+            <td>3325</td>
+            <td>Bug</td>
+            <td>低</td>
+            <td>Active</td>
+            <td>ERP專案API開發</td>
+            <td>Backup node install </td>
+            <td>5 day ago</td>
             <td class="green--text">
-              Success
+              Successful
             </td>
-            <td>develop</td>
-            <td>
-              1. Add png file "infinite.png"
-              2. rename router name "src/router.js"
-            </td>
-            <td>1 day</td>
           </tr>
           <tr>
-            <td>#3</td>
-            <td class="green--text">
-              Success
-            </td>
-            <td>develop</td>
-            <td>Added fenkins file</td>
-            <td>2 days</td>
-          </tr>
-          <tr>
-            <td>#2</td>
-            <td class="red--text">
-              Failed
-            </td>
-            <td>feature</td>
-            <td>Merge branch 'master'</td>
-            <td>18 days</td>
-          </tr>
-          <tr>
-            <td>#1</td>
-            <td class="green--text">
-              Success
-            </td>
-            <td>master</td>
-            <td>Use alpine python</td>
-            <td>1 month</td>
+            <td>4101</td>
+            <td>Document</td>
+            <td>正常</td>
+            <td>Finished</td>
+            <td>機器學習專案</td>
+            <td>完成TensorFlow教學文件</td>
+            <td>1 month ago</td>
+            <td></td>
           </tr>
         </tbody>
       </v-simple-table>
     </base-material-card>
-
     <div class="py-3" />
-
-    <!--
-    <base-material-card
-      color="success"
-      dark
-      icon="mdi-clipboard-plus"
-      title="Table on Dark Background"
-      class="px-5 py-3"
-    >
-      <v-simple-table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Country</th>
-            <th>City</th>
-            <th class="text-right">
-              Salary
-            </th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Dakota Rice</td>
-            <td>Niger</td>
-            <td>Oud-Turnhout</td>
-            <td class="text-right">
-              $36,738
-            </td>
-          </tr>
-
-          <tr>
-            <td>2</td>
-            <td>Minverva Hooper</td>
-            <td>Curaçao</td>
-            <td>Sinaas-Waas</td>
-            <td class="text-right">
-              $23,789
-            </td>
-          </tr>
-
-          <tr>
-            <td>3</td>
-            <td>Sage Rodriguez</td>
-            <td>Netherlands</td>
-            <td>Baileux</td>
-            <td class="text-right">
-              $56,142
-            </td>
-          </tr>
-
-          <tr>
-            <td>4</td>
-            <td>Philip Chaney</td>
-            <td>Korea, South</td>
-            <td>Overland Park</td>
-            <td class="text-right">
-              $38,735
-            </td>
-          </tr>
-
-          <tr>
-            <td>5</td>
-            <td>Doris Greene</td>
-            <td>Malawi</td>
-            <td>Feldkirchen in Kärnten</td>
-            <td class="text-right">
-              $63,542
-            </td>
-          </tr>
-
-          <tr>
-            <td>6</td>
-            <td>Mason Porter</td>
-            <td>Chile</td>
-            <td>Gloucester</td>
-            <td class="text-right">
-              $78,615
-            </td>
-          </tr>
-        </tbody>
-      </v-simple-table>
-    </base-material-card>
-    -->
   </v-container>
 </template>
