@@ -121,7 +121,7 @@
         {
           title: '專案清單',
           icon: 'mdi-clipboard-outline',
-          to: '/tables/Projecttables',
+          to: '/tables/projecttables',
         },
         {
           title: 'CI/CD工具軟體設定',
