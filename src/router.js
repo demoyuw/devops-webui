@@ -57,7 +57,7 @@ export default new Router({
         {
           name: 'CI/CD詳細記錄',
           path: 'cicd/recorddetail',
-          component: () => import('@/views/dashboard/Cicdrecorddetail'),
+          component: () => import('@/views/dashboard/pages/Cicdrecorddetail'),
         },
         // Maps
         {
