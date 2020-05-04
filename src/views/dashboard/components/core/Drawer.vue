@@ -131,7 +131,7 @@
         {
           title: 'CI/CD 紀錄清單',
           icon: 'mdi-clipboard-outline',
-          to: '/tables/regular-tables',
+          to: '/tables/cicdrecordlist-tables',
         },
         /*
         {
