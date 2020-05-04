@@ -54,6 +54,11 @@ export default new Router({
           path: 'tables/cicdrecordlist-tables',
           component: () => import('@/views/dashboard/tables/CicdRecordListTables'),
         },
+        {
+          name: 'CI/CD詳細記錄',
+          path: 'cicd/recorddetail',
+          component: () => import('@/views/dashboard/Cicdrecorddetail'),
+        },
         // Maps
         {
           name: 'Google Maps',
