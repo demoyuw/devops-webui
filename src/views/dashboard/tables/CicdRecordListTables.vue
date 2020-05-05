@@ -44,7 +44,11 @@
 
         <tbody>
           <tr>
-            <td>#8</td>
+            <td>
+              <a href="#/cicd/recorddetail">
+                #8
+              </a>
+            </td>
             <td class="red--text">
               Failed
             </td>
@@ -59,7 +63,11 @@
           </tr>
 
           <tr>
-            <td>#7</td>
+            <td>
+              <a href="#/cicd/recorddetail">
+                #7
+              </a>
+            </td>
             <td class="green--text">
               Success
             </td>
@@ -69,7 +77,11 @@
           </tr>
 
           <tr>
-            <td>#6</td>
+            <td>
+              <a href="#/cicd/recorddetail">
+                #6
+              </a>
+            </td>
             <td class="green--text">
               Success
             </td>
@@ -79,7 +91,11 @@
           </tr>
 
           <tr>
-            <td>#5</td>
+            <td>
+              <a href="#/cicd/recorddetail">
+                #5
+              </a>
+            </td>
             <td class="red--text">
               Failed
             </td>
@@ -88,7 +104,11 @@
             <td>4 hrs</td>
           </tr>
           <tr>
-            <td>#4</td>
+            <td>
+              <a href="#/cicd/recorddetail">
+                #4
+              </a>
+            </td>
             <td class="green--text">
               Success
             </td>
@@ -100,7 +120,11 @@
             <td>1 day</td>
           </tr>
           <tr>
-            <td>#3</td>
+            <td>
+              <a href="#/cicd/recorddetail">
+                #3
+              </a>
+            </td>
             <td class="green--text">
               Success
             </td>
@@ -109,7 +133,11 @@
             <td>2 days</td>
           </tr>
           <tr>
-            <td>#2</td>
+            <td>
+              <a href="#/cicd/recorddetail">
+                #2
+              </a>
+            </td>
             <td class="red--text">
               Failed
             </td>
@@ -118,7 +146,11 @@
             <td>18 days</td>
           </tr>
           <tr>
-            <td>#1</td>
+            <td>
+              <a href="#/cicd/recorddetail">
+                #1
+              </a>
+            </td>
             <td class="green--text">
               Success
             </td>
