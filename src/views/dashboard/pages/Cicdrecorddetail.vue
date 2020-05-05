@@ -1,17 +1,21 @@
 <template>
   <v-container
-    id="timeline"
+    id="Cicd-record-detail"
     fluid
     tag="section"
   >
-    <base-v-component
-      heading="Timelines"
-      link="components/timelines"
-    />
+    <v-row>
+      <v-col cols="12">
+        <h1>#8 root/devops-flask master</h1>
+      </v-col>
+    </v-row>
 
     <v-row>
       <v-col>
-        <v-timeline align-top>
+        <v-timeline
+          align-top
+          dense
+        >
           <v-timeline-item
             v-for="(timeline, i) in timelines"
             :key="i"
@@ -31,56 +35,8 @@
 
               <p
                 class="subtitle-1 font-weight-light"
-                v-text="timeline.text"
+                v-html="timeline.text"
               />
-
-              <div
-                class="text-uppercase body-2"
-                v-text="timeline.subtext"
-              />
-
-              <template v-if="timeline.action">
-                <v-divider class="mb-3" />
-
-                <v-menu
-                  v-model="menu"
-                  bottom
-                  offset-y
-                  origin="top left"
-                  right
-                  transition="scale-transition"
-                >
-                  <template v-slot:activator="{ attrs, on }">
-                    <v-btn
-                      v-bind="attrs"
-                      :color="timeline.action"
-                      large
-                      rounded
-                      v-on="on"
-                    >
-                      <v-icon
-                        left
-                        v-text="timeline.actionIcon"
-                      />
-                      <v-icon right>
-                        {{ menu ? 'mdi-menu-up' : 'mdi-menu-down' }}
-                      </v-icon>
-                    </v-btn>
-                  </template>
-
-                  <v-sheet>
-                    <v-list>
-                      <v-list-item
-                        v-for="a in timeline.actions"
-                        :key="a"
-                        link
-                      >
-                        <v-list-item-title v-text="a" />
-                      </v-list-item>
-                    </v-list>
-                  </v-sheet>
-                </v-menu>
-              </template>
             </v-card>
           </v-timeline-item>
         </v-timeline>
@@ -97,36 +53,66 @@
       menu: false,
       timelines: [
         {
-          chip: 'Some title',
+          chip: 'Clone',
+          color: 'teal',
+          icon: 'mdi-numeric-1-box',
+          text: "<span class='timestamp'><b>08:26:06</b> </span>Cloning the remote Git repository <br>" +
+            "<span class='timestamp'><b>08:26:06</b> </span>Cloning repository <a href='http://10.50.0.20/root/devops-flask'>http://10.50.0.20/root/devops-flask</a> <br>" +
+            "<span class='timestamp'><b>08:26:06</b> </span> &gt; git init /home/jenkins/workspace/pipeline_p-5g8vm-14 # timeout=10 <br>" +
+            "<span class='timestamp'><b>08:26:06</b> </span>Fetching upstream changes from <a href='http://10.50.0.20/root/devops-flask'>http://10.50.0.20/root/devops-flask</a> <br>" +
+            "<span class='timestamp'><b>08:26:06</b> </span> &gt; git --version # timeout=10 <br>" +
+            "<span class='timestamp'><b>08:26:07</b> </span>using GIT_ASKPASS to set credentials <br>" +
+            "<span class='timestamp'><b>08:26:07</b> </span> &gt; git fetch --tags --progress <a href='http://10.50.0.20/root/devops-flask'>http://10.50.0.20/root/devops-flask</a> +refs/heads/*:refs/remotes/origin/*<br>" +
+            "<span class='timestamp'><b>08:26:07</b> </span> &gt; git config remote.origin.url <a href='http://10.50.0.20/root/devops-flask'>http://10.50.0.20/root/devops-flask</a> # timeout=10<br>" +
+            "<span class='timestamp'><b>08:26:07</b> </span> &gt; git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10<br>" +
+            "<span class='timestamp'><b>08:26:07</b> </span> &gt; git config remote.origin.url <a href='http://10.50.0.20/root/devops-flask'>http://10.50.0.20/root/devops-flask</a> # timeout=10<br>" +
+            "<span class='timestamp'><b>08:26:07</b> </span>Fetching upstream changes from <a href='http://10.50.0.20/root/devops-flask'>http://10.50.0.20/root/devops-flask</a><br>" +
+            "<span class='timestamp'><b>08:26:07</b> </span>using GIT_ASKPASS to set credentials<br>" +
+            "<span class='timestamp'><b>08:26:07</b> </span> &gt; git fetch --tags --progress <a href='http://10.50.0.20/root/devops-flask'>http://10.50.0.20/root/devops-flask</a> +refs/heads/master:refs/remotes/local/temp<br>" +
+            "<span class='timestamp'><b>08:26:07</b> </span> &gt; git rev-parse local/temp^{commit} # timeout=10<br>" +
+            "<span class='timestamp'><b>08:26:07</b> </span> &gt; git rev-parse refs/remotes/origin/local/temp^{commit} # timeout=10<br>" +
+            "<span class='timestamp'><b>08:26:07</b> </span>Checking out Revision e6baa69b157107658f31b813e9091d421ee92ef0 (local/temp)<br>" +
+            "<span class='timestamp'><b>08:26:08</b> </span> &gt; git config core.sparsecheckout # timeout=10<br>" +
+            "<span class='timestamp'><b>08:26:08</b> </span> &gt; git checkout -f e6baa69b157107658f31b813e9091d421ee92ef0<br>" +
+            "<span class='timestamp'><b>08:26:19</b> </span>Commit message: 'Build devops web ui container by VueJS and k8s deployment yaml.' <br>" +
+            "<span class='timestamp'><b>08:26:19</b> </span>First time build. Skipping changelog.' <br>"
+          ,
+        },
+        {
+          chip: 'run sonarqube runner',
+          color: 'teal',
+          icon: 'mdi-numeric-2-box',
+          text: '<span class="timestamp"><b>08:30:34</b> </span>[pipeline_p-5g8vm-14] Running shell script <br>' +
+            '<span class="timestamp"><b>08:30:37</b> </span>+ kube-apply <br>' +
+            '<span class="timestamp"><b>08:30:37</b> </span>perform env var substitution <br>' +
+            '<span class="timestamp"><b>08:30:42</b> </span>deployment.apps/sonarqube-runner-14 created <br>'
+          ,
+        },
+        {
+          chip: 'Public flask image',
           color: 'error',
-          icon: 'mdi-briefcase',
-          text: 'Wifey made the best Father\'s Day meal ever. So thankful so happy so blessed. Thank you for making my family We just had fun with the “future” theme !!! It was a fun night all together ... The always rude Kanye Show at 2am Sold Out Famous viewing @ Figueroa and 12th in downtown.',
-          subtext: '11 hours ago via twitter',
+          icon: 'mdi-numeric-3-box',
+          text: '<span class="timestamp"><b>08:33:21</b> </span>Digest: sha256:d235ef613d6f8f2e313cb2e8bfc281a5680f4f7cb38329abb24815a0350484a7 <br>' +
+            '<span class="timestamp"><b>08:33:21</b> </span>Status: Downloaded newer image for python:3.6 <br>' +
+            '<span class="timestamp"><b>08:33:21</b> </span> ---&gt; 114ae8bdb954 <br>' +
+            '<span class="timestamp"><b>08:33:21</b> </span>Step 2/7 : LABEL version="0.1" <br>' +
+            '<span class="timestamp"><b>08:33:22</b> </span> ---&gt; Running in b63adbafb37c <br>' +
+            '<span class="timestamp"><b>08:33:27</b> </span>Removing intermediate container b63adbafb37c <br>' +
+            '<span class="timestamp"><b>08:33:27</b> </span> ---&gt; 0b0f895406ce <br>' +
+            '<span class="timestamp"><b>08:33:27</b> </span>Step 3/7 : WORKDIR /usr/src/app <br>' +
+            '<span class="timestamp"><b>08:33:32</b> </span>Removing intermediate container 738f82f98f76 <br>' +
+            '<span class="timestamp"><b>08:33:32</b> </span> ---&gt; 176fa2f919fe <br>' +
+            '<span class="timestamp"><b>08:33:32</b> </span>Step 4/7 : COPY ./sample/flask/dockerfile/* /usr/src/app/ <br>' +
+            '<span class="timestamp"><b>08:33:36</b> </span> ---&gt; b199c3fe0f3c <br>' +
+            '<span class="timestamp"><b>08:33:36</b> </span>Step 5/7 : RUN pip install --no-cache-dir -r requirements.txt <br>' +
+            '<span class="timestamp"><b>08:33:36</b> </span> ---&gt; Running in 74b918b5b56e <br>'
+          ,
         },
         {
-          chip: 'Another one',
-          color: 'success',
-          icon: 'mdi-puzzle',
-          text: 'Thank God for the support of my wife and real friends. I also wanted to point out that it’s the first album to go number 1 off of streaming!!! I love you Ellen and also my number one design rule of anything I do from shoes to music to homes is that Kim has to like it....',
-        },
-        {
-          chip: 'Another title',
-          color: 'info',
-          icon: 'mdi-fingerprint',
-          text: 'Called I Miss the Old Kanye That’s all it was Kanye And I love you like Kanye loves Kanye Famous viewing @ Figueroa and 12th in downtown LA 11:10PM. What if Kanye made a song about Kanye Royère doesn\'t make a Polar bear bed but the Polar bear couch is my favorite piece of furniture we own It wasn’t any Kanyes Set on his goals Kanye',
-          action: 'info',
-          actionIcon: 'mdi-wrench',
-          actions: [
-            'Action',
-            'Another Action',
-            'Something else here',
-          ],
-        },
-        {
-          chip: 'Another one',
-          color: 'warning',
-          icon: 'mdi-airplane-landing',
-          text: 'Tune into Big Boy\'s 92.3 I\'m about to play the first single from Cruel Winter also to Kim’s hair and makeup Lorraine jewelry and the whole style squad at Balmain and the Yeezy team. Thank you Anna for the invite thank you to the whole Vogue team',
+          chip: 'deploy production flask environment',
+          color: 'grey',
+          icon: 'mdi-numeric-4-box',
+          text: '',
         },
       ],
     }),
