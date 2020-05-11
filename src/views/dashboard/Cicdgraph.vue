@@ -37,6 +37,7 @@
             <v-btn
               block="true"
               color="blue lighten-4"
+              disabled="true"
             >
               CheckMark
             </v-btn>
@@ -60,12 +61,14 @@
             <v-btn
               block="true"
               color="blue lighten-4"
+              disabled="true"
             >
               Unittest
             </v-btn>
             <v-btn
               block="true"
               color="blue lighten-4"
+              disabled="true"
             >
               JUnit
             </v-btn>
@@ -89,6 +92,7 @@
             <v-btn
               block="true"
               color="blue lighten-4"
+              disabled="true"
             >
               Postman
             </v-btn>
@@ -112,6 +116,7 @@
             <v-btn
               block="true"
               color="blue lighten-4"
+              disabled="true"
             >
               Robot Framework
             </v-btn>
@@ -135,6 +140,7 @@
             <v-btn
               block="true"
               color="blue lighten-1"
+              @click.native="softSettingPage"
             >
               Kubernetes
             </v-btn>
@@ -158,6 +164,7 @@
             <v-btn
               block="true"
               color="blue lighten-4"
+              disabled="true"
             >
               Pormetheus & Grafana
             </v-btn>
@@ -174,7 +181,6 @@
 
     data () {
       return {
-
         tabs: 0,
         tasks: {
           0: [
@@ -231,6 +237,9 @@
     methods: {
       complete (index) {
         this.list[index] = !this.list[index]
+      },
+      softSettingPage: function () {
+        this.$router.push('softwaresetting')
       },
     },
   }
