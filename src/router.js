@@ -48,6 +48,11 @@ export default new Router({
           path: 'cicd/graph',
           component: () => import('@/views/dashboard/Cicdgraph'),
         },
+        {
+          name: 'CI/CD工具軟體細部設定',
+          path: 'cicd/softwaresetting',
+          component: () => import('@/views/dashboard/pages/Cicdsoftwaresetting'),
+        },
         // Tables
         {
           name: 'CI/CD紀錄清單',
