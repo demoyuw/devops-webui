@@ -42,7 +42,7 @@
               label="input kubeconfig"
               auto-grow
               value=""
-          ></v-textarea>
+            />
           </v-card-actions>
           <v-card-actions>
             <v-btn

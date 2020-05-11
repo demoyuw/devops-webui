@@ -10,14 +10,14 @@
       class="px-5 py-3"
     >
       <v-card-title>
-        <v-spacer></v-spacer>
+        <v-spacer />
         <v-text-field
           v-model="search"
           append-icon="mdi-magnify"
           label="Search"
           single-line
           hide-details
-        ></v-text-field>
+        />
       </v-card-title>
       <v-data-table
         :headers="headers"
@@ -32,7 +32,7 @@
             {{ item.status }}
           </v-chip>
         </template>
-        </v-data-table>
+      </v-data-table>
     </base-material-card>
 
     <div class="py-3" />
