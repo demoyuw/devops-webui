@@ -29,11 +29,6 @@ export default new Router({
           component: () => import('@/views/dashboard/component/Notifications'),
         },
         {
-          name: 'Icons',
-          path: 'components/icons',
-          component: () => import('@/views/dashboard/component/Icons'),
-        },
-        {
           name: '工作清單',
           path: 'tables/jobtables',
           component: () => import('@/views/dashboard/tables/JobTables'),
@@ -42,6 +37,11 @@ export default new Router({
           name: '專案清單',
           path: 'tables/projecttables',
           component: () => import('@/views/dashboard/tables/ProjectTables'),
+        },
+        {
+          name: '專案分支清單',
+          path: 'tables/branchlisttables',
+          component: () => import('@/views/dashboard/tables/BranchListTables'),
         },
         {
           name: 'CI/CD工具軟體設定',
@@ -63,18 +63,6 @@ export default new Router({
           name: 'CI/CD詳細記錄',
           path: 'cicd/recorddetail',
           component: () => import('@/views/dashboard/pages/Cicdrecorddetail'),
-        },
-        // Maps
-        {
-          name: 'Google Maps',
-          path: 'maps/google-maps',
-          component: () => import('@/views/dashboard/maps/GoogleMaps'),
-        },
-        // Upgrade
-        {
-          name: 'Upgrade',
-          path: 'upgrade',
-          component: () => import('@/views/dashboard/Upgrade'),
         },
       ],
     },
