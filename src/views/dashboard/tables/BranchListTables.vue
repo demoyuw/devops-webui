@@ -79,7 +79,7 @@
                   <v-list-item
                     v-for="(item, index) in items"
                     :key="index"
-                    @click="onButtonClick(on.item)"
+                    @click="onButtonClick(index)"
                   >
                     <v-list-item-title>{{ item.title }}</v-list-item-title>
                   </v-list-item>
@@ -150,8 +150,9 @@
         else return 'green'
       },
       */
-      onButtonClick (item) {
-        console.log('click on ' + item.no)
+      onButtonClick (index) {
+        console.log('click on ' + index)
+        this.$router.push('commithistorytables')
       },
     },
   }

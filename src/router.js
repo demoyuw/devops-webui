@@ -44,6 +44,11 @@ export default new Router({
           component: () => import('@/views/dashboard/tables/BranchListTables'),
         },
         {
+          name: '程式碼版控歷史紀錄',
+          path: 'tables/commithistorytables',
+          component: () => import('@/views/dashboard/tables/CommitHistoryTables'),
+        },
+        {
           name: 'CI/CD工具軟體設定',
           path: 'cicd/graph',
           component: () => import('@/views/dashboard/Cicdgraph'),
