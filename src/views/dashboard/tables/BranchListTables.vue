@@ -134,10 +134,10 @@
           { title: '上傳檔案' },
           { title: '建立新資料夾' },
           { title: '編輯檔案' },
+          { title: '下載檔案' },
           { title: '新增分支' },
           { title: '新增版本號' },
           { title: '分支版控紀錄' },
-          { title: '下載檔案' },
           { title: '合併分支' },
           { title: '刪除分支' },
         ],
@@ -152,7 +152,7 @@
       */
       onButtonClick (index) {
         console.log('click on ' + index)
-        if (index === 6) {
+        if (index === 7) {
           this.$router.push('commithistorytables')
         }
       },
