@@ -152,7 +152,9 @@
       */
       onButtonClick (index) {
         console.log('click on ' + index)
-        this.$router.push('commithistorytables')
+        if (index === 6) {
+          this.$router.push('commithistorytables')
+        }
       },
     },
   }
