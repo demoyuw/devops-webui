@@ -39,7 +39,10 @@
               工作名稱
             </th>
             <th class="light-blue--text">
-              最近一次更新時間
+              工作啟始日期
+            </th>
+            <th class="light-blue--text">
+              工作結束日期
             </th>
             <th class="light-blue--text">
               最近一次測試結果
@@ -55,7 +58,8 @@
             <td>Assigned</td>
             <td>iServCloud UI開發</td>
             <td>[ClientUI] 使用boot from iso 掛載volume問題</td>
-            <td>24 mins ago</td>
+            <td>2020-04-10</td>
+            <td>2020-06-30</td>
             <td class="green--text">
               Successful
             </td>
@@ -67,7 +71,8 @@
             <td>Active</td>
             <td>iServCloud UI開發</td>
             <td>[雲碼] 蒐集各實體機上的iServCloud component service 的 "ERROR" message，並寫入DB。</td>
-            <td>5 hours ago</td>
+            <td>2020-01-12</td>
+            <td>2020-01-16</td>
             <td class="red--text">
               Failed
             </td>
@@ -79,7 +84,8 @@
             <td>Solved</td>
             <td>ERP專案API開發</td>
             <td>自動化後端API開發作業流程</td>
-            <td>1 day ago</td>
+            <td>2020-03-15</td>
+            <td>2020-05-14</td>
             <td class="green--text">
               Successful
             </td>
@@ -91,7 +97,8 @@
             <td>Responsed</td>
             <td>iServCloud UI開發</td>
             <td>Auto Live migraion功能</td>
-            <td>1 day ago</td>
+            <td>2020-03-01</td>
+            <td>2020-04-30</td>
             <td class="red--text">
               Failed
             </td>
@@ -103,7 +110,8 @@
             <td>Active</td>
             <td>ERP專案API開發</td>
             <td>Backup node install </td>
-            <td>5 day ago</td>
+            <td>2020-01-20</td>
+            <td>2020-02-19</td>
             <td class="green--text">
               Successful
             </td>
@@ -115,7 +123,8 @@
             <td>Finished</td>
             <td>機器學習專案</td>
             <td>完成TensorFlow教學文件</td>
-            <td>1 month ago</td>
+            <td>2020-05-01</td>
+            <td>2020-05-15</td>
             <td></td>
           </tr>
         </tbody>
