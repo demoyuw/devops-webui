@@ -47,8 +47,8 @@
             <td>3</td>
             <td>1 day</td>
             <td>
-               <a href='#/tables/branchlisttables'>
-              3
+              <a href='#/tables/branchlisttables'>
+                3
               </a>
             </td>
             <td>24 mins ago</td>
