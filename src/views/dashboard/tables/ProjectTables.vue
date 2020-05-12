@@ -46,7 +46,11 @@
             <td>iServCloud UI開發</td>
             <td>3</td>
             <td>1 day</td>
-            <td>3</td>
+            <td>
+               <a href='#/tables/branchlisttables'>
+              3
+              </a>
+            </td>
             <td>24 mins ago</td>
             <td>
               <v-icon
