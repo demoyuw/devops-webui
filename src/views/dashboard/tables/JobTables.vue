@@ -125,7 +125,7 @@
             <td>完成TensorFlow教學文件</td>
             <td>2020-05-01</td>
             <td>2020-05-15</td>
-            <td></td>
+            <td />
           </tr>
         </tbody>
       </v-simple-table>
