@@ -25,7 +25,7 @@
         :search="search"
       >
         <template v-slot:item.index="{ item }">
-          <a href='#/cicd/recorddetail'>
+          <a href="#/cicd/recorddetail">
             {{ item.index }}
           </a>
         </template>
