@@ -24,6 +24,12 @@
         :items="desserts"
         :search="search"
       >
+        <template v-slot:item.index="{ item }">
+          <a href='#/cicd/recorddetail'>
+            {{ item.index }}
+          </a>
+        </template>
+
         <template v-slot:item.status="{ item }">
           <v-chip
             :color="getColor(item.status)"
