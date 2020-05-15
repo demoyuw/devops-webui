@@ -151,7 +151,9 @@
       },
       */
       onButtonClick (index) {
+        /*
         console.log('click on ' + index)
+        */
         if (index === 7) {
           this.$router.push('commithistorytables')
         }
