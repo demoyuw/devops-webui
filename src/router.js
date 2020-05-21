@@ -69,6 +69,11 @@ export default new Router({
           path: 'cicd/recorddetail',
           component: () => import('@/views/dashboard/pages/Cicdrecorddetail'),
         },
+        {
+          name: '檔案目錄',
+          path: 'file/list',
+          component: () => import('@/views/dashboard/tables/FileListTable'),
+        },
       ],
     },
   ],
