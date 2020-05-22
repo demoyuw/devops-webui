@@ -6,21 +6,51 @@
   >
     <base-material-card
       icon="mdi-clipboard-text"
-      title=""
+      title="iServCloud UI開發"
       class="px-5 py-3"
     >
-      <!--
-      <v-card-title>
+      <v-row>
+        <v-menu
+          offset-y
+        >
+          <template v-slot:activator="{ on }">
+            <v-btn
+              color="primary"
+              dark
+              v-on="on"
+            >
+              <v-icon>mdi-call-split</v-icon>
+              Branch: master
+            </v-btn>
+          </template>
+
+          <v-list>
+            <v-subheader><h2>Branchs</h2></v-subheader>
+            <v-divider />
+            <v-list-item
+              v-for="(item, index) in items"
+              :key="index"
+              @click="onButtonClick(index)"
+            >
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
         <v-spacer />
-        <v-text-field
-          v-model="search"
-          append-icon="mdi-magnify"
-          label="Search"
-          single-line
-          hide-details
-        />
-      </v-card-title>
-      -->
+        <v-btn>
+          <v-icon>mdi-file-plus</v-icon>
+          Create new file
+        </v-btn>
+        <v-btn>
+          <v-icon>mdi-upload</v-icon>
+          Upload files
+        </v-btn>
+        <v-btn>
+          <v-icon>mdi-download</v-icon>
+          Clone or download
+        </v-btn>
+      </v-row>
+
       <v-data-table
         :headers="headers"
         :items="desserts"
@@ -130,6 +160,11 @@
             message: 'first version',
             lastexetime: 'last month',
           },
+        ],
+        items: [
+          { title: 'master' },
+          { title: 'develop' },
+          { title: 'feature' },
         ],
       }
     },
