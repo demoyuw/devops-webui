@@ -43,11 +43,15 @@
 
         <tbody>
           <tr>
-            <td>iServCloud UI開發</td>
+            <td>
+              <a href="#/file/list">
+                iServCloud UI開發
+              </a>
+            </td>
             <td>3</td>
             <td>1 day</td>
             <td>
-              <a href='#/tables/branchlisttables'>
+              <a href="#/tables/branchlisttables">
                 3
               </a>
             </td>
